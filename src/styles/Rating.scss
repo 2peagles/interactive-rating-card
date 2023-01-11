@@ -1,0 +1,125 @@
+// Primary
+$Cyan: hsl(180, 66%, 49%);
+$Dark-violet: hsl(257, 27%, 26%);
+// secondary
+$Orange: hsl(24, 97%, 53%);
+// Neutral
+$Grey: hsl(0, 0%, 75%);
+$Grey-violet: hsl(257, 7%, 63%);
+$Very-Dark_Blue: hsl(255, 11%, 22%);
+$Very-Dark-violet: hsl(260, 8%, 14%);
+
+@mixin container {
+    max-width: 325px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: $Very-Dark_Blue;
+}
+
+@mixin heading {
+    color: #fff;
+    line-height: .7rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+@mixin subheading {
+    color: $Grey-violet;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.rating_container {
+    @include container();
+    text-align: left;
+
+    h1 {
+        // color:#fff;
+        // line-height: .7rem;
+        // font-weight: 500;
+        // font-size: 1.5rem;
+        @include heading();
+    }
+
+    p {
+        // color:$Grey-violet;
+        // font-weight: 500;
+        // font-size: .9rem;
+        // line-height: 1.3rem;
+        @include subheading();
+    }
+}
+
+.rating_container img {
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 10rem;
+    padding: .6rem;
+}
+
+// calc(25px - 6 * ((100vw - 320px) / 680))
+button:not(.submit_btn) {
+    display: inline-block;
+    margin: .5rem .2rem 1rem 0;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10rem;
+    color: $Grey-violet;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.09);
+
+    &:hover {
+        background-color: $Orange;
+    }
+
+    &:focus {
+        background-color: $Grey;
+    }
+
+    @media(width > 700px) {
+        margin: .5rem 1rem 1rem 0;
+    }
+}
+
+.submit_btn {
+    width: 100%;
+    text-transform: uppercase;
+    padding: .8rem 0;
+    border-radius: 10rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .12rem;
+    background-color: $Orange;
+
+    &:hover {
+        color: #000;
+        background-color: #fff;
+        transition: 1s linear;
+    }
+}
+
+.thankyou_container {
+    @include container();
+    text-align: center;
+
+    h2 {
+        @include heading();
+    }
+
+    p {
+        @include subheading();
+    }
+
+    p:first-of-type {
+        line-height: 2.8rem;
+        padding: 0rem;
+        border-radius: 10rem;
+        color: $Orange;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+}
