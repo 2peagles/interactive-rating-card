@@ -1,0 +1,63 @@
+# Frontend Mentor - Interactive rating component solution
+
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+
+## My process
+
+### Built with
+
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Vite.js](https://nextjs.org/) - React framework
+- [Scss](https://styled-components.com/) - For styles
+
+
+### What I learned
+I feel like starting off this project was rather easy, I did the html without adding a ton of divs
+ 
+The progression I really like using scss and the mixins sometimes using classes can get a bit complex and it's hard to name everything then having to remember the names of everything. Using mixins is a time saver. I feel it helps my code to be more readable!
+
+I'm going back to trying to understand javascript better. I kinda knew what I had to do but I wasn't quite sure how to do it. I thought I need a link to go between the ratings page and the thank you page I know it had to be an onclick function to get me there and some sort of checker if you will
+if the rating is filled out only then can you go to the next page otherwise return nothing
+The other thing was communicating between the two components. I wasn't sure how to do that. I again knew I had to pass the prop down and I thought if I added a link then passed it that way it would work but I also knew that kinda wouldn't work.
+ 
+I did all the css myself then I found this video to help out with the javascript part I was missing
+https://www.youtube.com/watch?v=obFU17kg3ow
+ 
+This was very simple and I do think I learn a lot from this and I think now moving forward I'll have a bit more knowledge and I'm just glad I kinda knew what to do and wasn't completely lost!
+
+![Screenshot 2023-01-09 4 00 46 AM](https://user-images.githubusercontent.com/103866435/211272123-e3feb4a7-651c-4d8b-ae05-4706339ff564.png)
+
+## Author
+
+- Portfolio - [Precious](https://2peagles.github.io/fireportfolio/)
+- Frontend Mentor - [@2peagles](https://www.frontendmentor.io/profile/2peagles)
+
+
+

@@ -21,6 +21,7 @@ $Very-Dark-violet: hsl(260, 8%, 14%);
     line-height: .7rem;
     font-weight: 500;
     font-size: 1.5rem;
+    letter-spacing: .1rem;
 }
 
 @mixin subheading {
@@ -35,18 +36,10 @@ $Very-Dark-violet: hsl(260, 8%, 14%);
     text-align: left;
 
     h1 {
-        // color:#fff;
-        // line-height: .7rem;
-        // font-weight: 500;
-        // font-size: 1.5rem;
         @include heading();
     }
 
     p {
-        // color:$Grey-violet;
-        // font-weight: 500;
-        // font-size: .9rem;
-        // line-height: 1.3rem;
         @include subheading();
     }
 }
@@ -79,7 +72,7 @@ button:not(.submit_btn) {
     }
 
     @media(width > 700px) {
-        margin: .5rem 1rem 1rem 0;
+        margin: .5rem 1rem 1.7rem 0;
     }
 }
 
